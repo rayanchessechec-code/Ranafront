@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenFront Air</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="top-bar">
+      <span>Or : <span id="gold">100</span></span>
+      <span>Pop : <span id="pop">10</span>/10</span>
+      <span>Villes : <span id="cities">1</span></span>
+      <span>Ports : <span id="ports">0</span></span>
+      <span>Aéroports : <span id="airports">0</span></span>
+    </div>
+
+    <div id="side-panel">
+      <button onclick="buyCity()">Acheter Ville (50 or)</button>
+      <button onclick="buyPort()">Acheter Port (75 or)</button>
+      <button onclick="buyAirport()">Acheter Aéroport (75 or)</button>
+      <button onclick="buyFactory()">Acheter Usine (100 or)</button>
+      <button onclick="openMarket()">Marché Noir</button>
+      <button onclick="showQuests()">Quêtes</button>
+    </div>
+
+    <canvas id="map" width="1200" height="700"></canvas>
+
+    <div id="chat">
+      <div id="chat-log"></div>
+      <input id="chat-input" placeholder="Écrire..." />
+    </div>
+  </div>
+
+  <script src="js/map.js"></script>
+  <script src="js/economy.js"></script>
+  <script src="js/units.js"></script>
+  <script src="js/bots.js"></script>
+  <script src="js/disasters.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/market.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

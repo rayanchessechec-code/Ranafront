@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+}
+
+#ui {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#top-bar {
+  background: #222;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+#side-panel {
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#side-panel button {
+  padding: 10px;
+  background: #444;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#map {
+  background: url('assets/world-map.jpg') no-repeat center/cover;
+  cursor: crosshair;
+}
+
+#chat {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#chat-log {
+  height: 100px;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+#chat-input {
+  width: 100%;
+  margin-top: 5px;
+}
